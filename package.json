@@ -1,0 +1,34 @@
+{
+  "name": "connect-ipl",
+  "version": "0.1.2",
+  "description": "Connect middleware wrapper for ipl.js",
+  "author": {
+    "name": "Max Motovilov",
+    "email": "max@motovilov.com"
+  },
+
+  "license" : "BSD-3-Clause",
+
+  "main": "index.js",
+
+  "files": [
+	"LICENSE",
+    "package.json",
+    "index.js"
+  ],
+
+  "dependencies": {
+	"node-promise": ">= 0.5.10",
+	"ipl": ">= 0.1.2"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MaxMotovilov/connect-ipl.git"
+  },
+
+  "engines": {
+    "node": ">= 0.10"
+  }
+}
+
