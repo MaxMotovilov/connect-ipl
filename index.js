@@ -23,7 +23,7 @@ module.exports = function( config, mapper ) {
 		try {
 			mapper( 
 				ipl, url.pathname.substr(1).replace( /\..*?$/, '' ), 
-				{ headers: req.headers, url: original_url },
+				{ request: { headers: req.headers, url: ( url.host ? '' : (url.protocol||"http:") + "//" + req.headers.host || '' ) + original_url } },
 				is_script, [], req, resp 
 			)
 				.on( 'error', fail )
