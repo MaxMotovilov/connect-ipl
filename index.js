@@ -34,6 +34,8 @@ module.exports = function( config, mapper ) {
 		}
 		
 		function fail( err ) {
+			if (err.code == 'ENOENT')
+				err.lookupFailure = true;
 			resp.setHeader( 'Content-Type', 'text/plain' );
 			resp.writeHead( err.lookupFailure ? 404 : 500 );
 			resp.end( err.message );
