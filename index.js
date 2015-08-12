@@ -22,7 +22,7 @@ module.exports = function( config, mapper ) {
 
 		try {
 			mapper( 
-				ipl, url.pathname.substr(1).replace( /\..*?$/, '' ), 
+				ipl, url.pathname.substr(1).replace( /\.[^.]*$/, '' ), 
 				{ request: { headers: req.headers, url: ( url.host ? '' : (url.protocol||"http:") + "//" + req.headers.host || '' ) + original_url } },
 				is_script, [], req, resp 
 			)
