@@ -1,6 +1,6 @@
 {
   "name": "connect-ipl",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Connect middleware wrapper for ipl.js",
   "author": {
     "name": "Max Motovilov",
@@ -19,7 +19,7 @@
 
   "dependencies": {
 	"node-promise": ">= 0.5.12",
-	"ipl": ">= 0.2.2"
+	"ipl": ">= 0.2.3"
   },
 
   "repository": {
